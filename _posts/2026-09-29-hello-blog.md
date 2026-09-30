@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MRP"
+title: "Part A) MRP"
 date: 2026-09-29 12:00:00 +0900
 categories: [일기]
 tags: [blog, jekyll]
