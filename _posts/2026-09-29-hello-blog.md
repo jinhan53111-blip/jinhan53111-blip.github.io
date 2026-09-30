@@ -12,7 +12,7 @@ MRP(Markov Reward Process)에 대한 내용 정리
 Stochastic Process에 대한 기본적인 지식은 있다는 가정하에 내용을 정리하였습니다.  
 본교 "추계과정" 수업을 수강 후 MRP부터 정리하였습니다.
 
----
+
 
 ## Motivation
 
@@ -21,7 +21,7 @@ Stochastic Process에 대한 기본적인 지식은 있다는 가정하에 내�
 
 MRP는 말 그대로 Markov Chain에서 Reward(보상)을 추가한 문제입니다.
 
----
+
 
 ## Reward
 
@@ -57,7 +57,6 @@ $$
 
 그러므로, 동일한 state라도 보상이 확률적으로 변할 수 있기 때문에 기댓값을 사용합니다.
 
----
 
 ## Cumulative Return
 
