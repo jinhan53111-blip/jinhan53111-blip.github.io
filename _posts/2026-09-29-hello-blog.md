@@ -14,9 +14,7 @@ Stochastic Process에 대한 기본적인 지식은 있다는 가정하에 내�
 
 ---
 
-## MRP
-
-### Motivation
+## Motivation
 
 강화학습은 MDP로 formulation된 문제를 해결하는 알고리즘입니다.  
 그들을 알기 위해서는 MRP에 대한 기본적인 이해가 필요합니다.
@@ -25,7 +23,7 @@ MRP는 말 그대로 Markov Chain에서 Reward(보상)을 추가한 문제입니
 
 ---
 
-### Reward
+## Reward
 
 보상은 말 그대로 우리가 어떤 상태에서 어떤 상태로 이동하면 얻는 리워드를 의미합니다.
 
@@ -61,7 +59,7 @@ $$
 
 ---
 
-### Cumulative Return
+## Cumulative Return
 
 $G_t$는 보상들의 누적합을 의미합니다.
 
