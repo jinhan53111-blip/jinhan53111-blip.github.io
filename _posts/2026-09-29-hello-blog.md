@@ -12,7 +12,7 @@ MRP(Markov Reward Process)에 대한 내용 정리
 Stochastic Process에 대한 기본적인 지식은 있다는 가정하에 내용을 정리하였습니다.  
 본교 "추계과정" 수업을 수강 후 MRP부터 정리하였습니다.
 
-
+---
 
 ## Motivation
 
