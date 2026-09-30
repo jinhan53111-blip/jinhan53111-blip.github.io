@@ -14,8 +14,7 @@ layout: default
   </h1>
 
   <p class="home-description">
-    Notes on reinforcement learning, stochastic processes,
-    and their mathematical foundations.
+    Notes on reinforcement learning, stochastic processes.
   </p>
 
   <div class="home-divider"></div>
