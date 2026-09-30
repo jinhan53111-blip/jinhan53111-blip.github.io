@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Part A) MRP"
+title: "Part A) MRP(Markov Reward Process)"
 date: 2026-09-29 12:00:00 +0900
 categories: [일기]
 tags: [blog, jekyll]
