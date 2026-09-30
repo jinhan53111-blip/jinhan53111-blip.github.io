@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Markov Reward Process"
-description: "Understanding Reinforcement Learning from the Foundations of Markov Reward Processes."
+description: "Understanding MRP(Markov Reward Processes)."
 date: 2026-09-29 12:00:00 +0900
 categories: [RL]
 tags: [blog, jekyll]
