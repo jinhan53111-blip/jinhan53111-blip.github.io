@@ -10,7 +10,7 @@ layout: default
 
   <h1 class="home-title">
     Reinforcement Learning<br>
-    & Stochastic Processes
+   
   </h1>
 
   <p class="home-description">
