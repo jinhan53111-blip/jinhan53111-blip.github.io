@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Part A) MRP(Markov Reward Process)"
+description: "From Markov chains to rewards and cumulative returns."
 date: 2026-09-29 12:00:00 +0900
-categories: [일기]
+categories: [RL]
 tags: [blog, jekyll]
 ---
 
