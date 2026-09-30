@@ -497,3 +497,65 @@ mjx-container[display="true"] {
     gap: 6px;
   }
 }
+/* ========================================
+   Post refinement
+   ======================================== */
+
+/* 본문 시작 */
+.post-content {
+  color: #242424;
+}
+
+/* H2: 큰 Chapter */
+.post-content h2 {
+  position: relative;
+
+  margin-top: 80px;
+  margin-bottom: 42px;
+  padding-top: 22px;
+
+  border-top: 1px solid var(--line);
+
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+/* H3: Section */
+.post-content h3 {
+  margin-top: 58px;
+  margin-bottom: 26px;
+
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+/* 일반 문단 */
+.post-content p {
+  margin-bottom: 22px;
+  line-height: 2;
+  word-break: keep-all;
+}
+
+/* 수식 */
+.post-content mjx-container[display="true"] {
+  margin: 52px 0 !important;
+}
+
+/* 인용/핵심 정의 */
+.post-content blockquote {
+  margin: 38px 0;
+  padding: 14px 0 14px 24px;
+
+  border-left: 2px solid var(--accent);
+
+  color: #555;
+}
+
+/* 첫 번째 H2는 위쪽 선 제거 */
+.post-content > h2:first-of-type {
+  margin-top: 30px;
+  padding-top: 0;
+  border-top: none;
+}
