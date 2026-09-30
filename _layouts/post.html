@@ -2,19 +2,34 @@
 layout: default
 ---
 
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']]
-  }
-};
-</script>
+<article class="post">
 
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+  <header class="post-header">
 
-{{ content }}
+    <div class="post-category">
+      REINFORCEMENT LEARNING / {{ page.categories | first }}
+    </div>
+
+    <h1 class="post-title">
+      {{ page.title }}
+    </h1>
+
+    {% if page.description %}
+    <p class="post-description">
+      {{ page.description }}
+    </p>
+    {% endif %}
+
+    <div class="post-meta">
+      {{ page.date | date: "%B %d, %Y" }}
+    </div>
+
+  </header>
+
+  <div class="post-divider"></div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
