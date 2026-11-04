@@ -357,7 +357,7 @@ $$
 
 여기서 중요한 점은 앞에서 계산한 $V_9(c)$와 $V_9(p)$를 그대로 사용한다는 것입니다.
 
-### 일반화 시키기
+### 일반화하기
 
 상태 $s$에서 다음 상태 $s'$로 이동할 확률을 $P_{ss'}$라고 하겠습니다.
 
@@ -467,66 +467,15 @@ $$
 \mathbf{v}_t=R+P\mathbf{v}_{t+1}
 $$
 
-파이썬에서는 다음과 같이 구현할 수 있습니다.
+파이썬에서는 다음과 같은 결과를 볼 수 있습니다.
 
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-# 행: 현재 상태 / 열: 다음 상태
-# 상태 순서: Coke, Pepsi
-P = np.array([
-    [0.7, 0.3],
-    [0.5, 0.5]
-])
-
-# 각 상태에서의 지출
-R = np.array([1.5, 1.0])
-
-# 시점 0부터 9까지 총 10번의 지출
-H = 10
-
-# V[t, 0]: 시점 t에서 Coke 상태의 가치
-# V[t, 1]: 시점 t에서 Pepsi 상태의 가치
-# 종료 시점의 가치 V[10]은 0
-V = np.zeros((H + 1, 2))
-
-# 마지막 시점부터 거꾸로 계산
-for t in range(H - 1, -1, -1):
-    V[t] = R + P @ V[t + 1]
-
-print(f"V_0(Coke) = {V[0, 0]:.6f}")
-print(f"V_0(Pepsi) = {V[0, 1]:.6f}")
-
-# 실제 계산 순서: t=10 → 9 → ... → 0
-times = np.arange(H, -1, -1)
-
-fig, ax = plt.subplots(figsize=(9, 5))
-
-ax.plot(times, V[times, 0], "o-", label="Coke")
-ax.plot(times, V[times, 1], "s-", label="Pepsi")
-
-# 왼쪽에서 오른쪽으로 계산 순서가 보이도록 설정
-ax.set_xlim(H + 0.3, -0.3)
-ax.set_xticks(times)
-
-ax.set_xlabel("Time t (backward calculation)")
-ax.set_ylabel("Expected cumulative spending")
-ax.set_title("Backward Induction: From t=10 to t=0")
-
-ax.grid(alpha=0.3)
-ax.legend()
-
-plt.tight_layout()
-plt.show()
-```
-
-실행 결과는 다음과 같습니다.
-
-```text
+$$
 V_0(Coke) = 13.359375
 V_0(Pepsi) = 12.734375
-```
+$$
+
+<img width="909" height="485" alt="스크린샷 2026-11-04 오후 5 41 30" src="https://github.com/user-attachments/assets/438b4f9e-57e0-4c49-b3da-3a7cb606d1e8" />
+
 
 즉, 오늘 콜라를 마셨다면 오늘을 포함한 10일 동안의 기대 누적 지출은 약 13.36입니다.
 
