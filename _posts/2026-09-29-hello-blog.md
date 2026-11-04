@@ -129,13 +129,13 @@ $\mathbb{E}[G_0 \mid S_0 = c]$에 근사시키는 것이 몬테카를로의 방�
 몬테카를로를 직관적으로 설명하기 위해서 다음과 같이 코드로 확인해보겠습니다.
 1사분면 위에 점을 찍어서, 단위원을 완성하는 과정입니다. 시행 횟수가 늘어나면 점차 단위원에 근사하게 됩니다.
 
-n = 100
+$$ n = 100 $$
 <img width="561" height="557" alt="스크린샷 2026-11-04 오후 5 09 10" src="https://github.com/user-attachments/assets/c1a7619c-8e2e-4001-b084-73cdb1bbf942" />
 
-n = 1000
+$$ n = 1000 $$
 <img width="562" height="541" alt="스크린샷 2026-11-04 오후 5 13 28" src="https://github.com/user-attachments/assets/d52e5f2c-37d0-4ef3-a31e-0e9ac02c7750" />
 
-n = 10000
+$$ n = 10000 $$
 <img width="543" height="550" alt="스크린샷 2026-11-04 오후 5 13 55" src="https://github.com/user-attachments/assets/14861fb8-6ace-4c1e-a11e-c4572996b857" />
 
 
